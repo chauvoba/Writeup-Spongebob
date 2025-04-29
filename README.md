@@ -1,5 +1,5 @@
 # Writeup-Spongebob
-Writeup CTF Cậu bé bọt biển
+Writeup CTF Cậu bé bọt biển.
 Một thử thách tìm kiếm thông điệp bị ẩn tại Viblo CTF, link dẫn đến thử thách: https://ctf.viblo.asia/puzzles/spongebob-spongebob-f6zdxekrcdy
 
 # Đề bài 

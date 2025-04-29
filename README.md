@@ -3,13 +3,16 @@ Writeup CTF Cậu bé bọt biển.
 Một thử thách tìm kiếm thông điệp bị ẩn tại Viblo CTF, link dẫn đến thử thách: https://ctf.viblo.asia/puzzles/spongebob-spongebob-f6zdxekrcdy
 
 # Đề bài 
+
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/1a36c533-9bb4-48b8-b2fb-b45bb49961ca" />
 
 # Phân tích
 Đầu tiên chúng ta tải về file image.zip được đính kèm đề bài. Giải nén & mở ảnh lên sẽ là Spongebob - Nhân vật hoạt hình khá nổi tiếng trong phim hoạt hình Cậu bé bọt biển. 
+
 <img width="194" alt="image" src="https://github.com/user-attachments/assets/bc660612-c3bb-4194-9af6-dfe2c43650ff" />
 
 Chú ý đến tên được đặt cho ảnh của Spongebob, ta thấy tác giả đặt tên cho ảnh là "lsb_image.png"
+
 <img width="397" alt="image" src="https://github.com/user-attachments/assets/cdc48122-8325-474c-9a9b-76e290239b4a" />
 
 Kết hợp với gợi ý từ đề bài (Stego), chúng ta có thể nhận ra ngay một cơ chế ẩn giấu thông điệp bên trong một bức ảnh rất nổi tiếng, với tên gọi là Least Significant Bit (LSB). Cùng nói sơ qua một chút về LSB: 
@@ -19,8 +22,10 @@ Kết hợp với gợi ý từ đề bài (Stego), chúng ta có thể nhận r
 
 # Bài giải 
 Chúng ta bắt đầu giải. Mở google và tìm kiếm một trang web Decode LSB bất kỳ có ở trên mạng. Upload ảnh lên và thực hiện Decode. Khi thành công, chúng ta sẽ nhận được thông điệp sau, sau khi loại trừ các giá trị lặp còn lại: ZmxhZ3toaWRkZW5fdGV4dF9pbWFnZV9sc2J9
+
 <img width="894" alt="image" src="https://github.com/user-attachments/assets/984cee5e-269c-419d-9322-74b327bab105" />
 
 Nhìn vào chuỗi giá trị này, chúng ta đoán rằng trông nó rất giống với các thông điệp mã hóa sử dụng Base64. Vì vậy, thực hiện copy chuỗi giá trị này và tiếp tục tìm kiếm bất kỳ một trang web Decode online nào đó để thực hiện giải mã. 
+
 <img width="465" alt="image" src="https://github.com/user-attachments/assets/387dc80d-d280-4615-a498-745fd8e3de1a" />
 
